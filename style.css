@@ -42,7 +42,6 @@ header {
 
 .h_nav {
   float: right;
-  text-align: right;
 }
 
 .h_nav li {
@@ -269,9 +268,16 @@ h2 {
 }
 
 .contact-item section {
-  width: 50%;
   margin: 0 auto;
   text-align: left;
+}
+
+.contact-item:first-child section{
+  width: 150px;
+}
+
+.contact-item:last-child section {
+  width: 200px;
 }
 
 .contact-item section:first-child {
@@ -291,6 +297,9 @@ a[href^=mailto], a[href^=tel] {
 
 .contact-item i {
   font-size: 50px;
+}
+
+.contact-item i:not(:last-child) {
   margin-right: 20px;
 }
 
