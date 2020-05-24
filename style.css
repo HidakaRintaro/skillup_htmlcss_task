@@ -1,0 +1,311 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.frame {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/*--------------------
+  header 
+--------------------*/
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #ec715f;
+}
+
+.logo_link {
+  float: left;
+  height: 70px;
+}
+
+.logo_link img {
+  height: 70px;
+}
+
+.h_nav {
+  float: right;
+  text-align: right;
+}
+
+.h_nav li {
+  display: inline-block;
+  margin: 0 30px;
+  line-height: 70px;
+}
+
+.h_nav a {
+  color: #fafafa;
+  font-size: 16px;
+}
+
+/*--------------------
+  main
+--------------------*/
+h2 {
+  color: #000000;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.h2-line {
+  width: 70px;
+  border: none;
+  border-top: 3px solid #ec715f;
+  margin: 0 auto 30px;
+}
+
+/* #mv */
+#mv {
+  width: 100%;
+  height: 650px;
+  background-image: url(./img/mv.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+#mv h1 {
+  color: #fafafa;
+  font-size: 64px;
+  margin-bottom: 10px;
+  padding-top: 200px;
+}
+
+.mv-text {
+  color: #fafafa;
+  font-size: 20px;
+}
+
+/* #portfolio */
+#portfolio {
+  background-color: #eceff1;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.portfolio-text {
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.portfolio-box {
+  width: 920px;
+  margin: 0 auto;
+}
+
+.portfolio-box div {
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  float: left;
+}
+
+.portfolio-box div:not(:nth-child(3n)) {
+  margin-right: 10px;
+}
+
+.portfolio-box div:not(:nth-last-child(-n+3)) {
+  margin-bottom: 10px;
+}
+
+.portfolio-item1 {
+  background-image: url(./img/sketch.jpg);
+}
+
+.portfolio-item2 {
+  background-image: url(./img/websuku.png);
+}
+
+.portfolio-item3 {
+  background-image: url(./img/write.jpg);
+}
+
+.portfolio-item4 {
+  background-image: url(./img/webcamp.png);
+}
+
+.portfolio-item5 {
+  background-image: url(./img/talk.jpg);
+}
+
+.portfolio-item6 {
+  background-image: url(./img/webcamp-mother.png);
+}
+
+/* #feature */
+#feature {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.feature-text {
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.feature-box {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  width: 320px;
+  float: left;
+}
+
+.feature-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.feature-item i {
+  font-size: 60px;
+}
+
+.feature-item h3 {
+  color: #000000;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.feature-item p {
+  color: #000000;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* #profile */
+#profile {
+  background-color: #eceff1;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.profile-text {
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.profile-box {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.profile-item {
+  width: 512px;
+  float: left;
+}
+
+.profile-img {
+  background-image: url(./img/my-icon.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.profile-item section {
+  text-align: left;
+}
+
+.profile-item section:first-child {
+  margin-bottom: 20px;
+}
+
+.profile-item section h3 {
+  color: #000000;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.profile-item section p {
+  color: #000000;
+  font-size: 16px;
+}
+
+/* #contact */
+#contact {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.contact-text {
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.contact-box {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.contact-item {
+  width: 400px;
+  float: left;
+}
+
+.contact-item section {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-item section:first-child {
+  margin-bottom: 20px;
+}
+
+.contact-item h3 {
+  color: #000000;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+a[href^=mailto], a[href^=tel] {
+  color: #1d1d1d;
+  text-decoration: underline;
+}
+
+.contact-item i {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+/*--------------------
+  footer
+--------------------*/
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #ec715f;
+}
+
+footer p {
+  font-size: 16px;
+  color: #fafafa;
+  line-height: 60px;
+  text-align: center;
+}
