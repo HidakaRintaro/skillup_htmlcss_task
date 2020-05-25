@@ -40,6 +40,10 @@ header {
   height: 70px;
 }
 
+.h_bar {
+  display: none;
+}
+
 .h_nav {
   float: right;
 }
@@ -317,4 +321,165 @@ footer p {
   color: #fafafa;
   line-height: 60px;
   text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .frame {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .vp-none {
+    display: none;
+  }
+
+  /*--------------------
+  header
+  --------------------*/
+  header {
+    height: 50px;
+  }
+
+  .logo_link {
+    height: 50px;
+  }
+  
+  .logo_link img {
+    height: 50px;
+  }
+
+  .h_menu {
+    border: 1px solid #fafafa;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    margin: 5px 0;
+    padding: 11px 5px;
+  }
+  
+  .h_bar {
+    background-color: #fafafa;
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .h_bar:last-child {
+    margin-bottom: 0;
+  }
+
+  /*--------------------
+  main
+  --------------------*/  
+  /* #mv */
+  #mv {
+    background-image: url(./img/code.png);
+  }
+  
+  #mv h1 {
+    font-size: 40px;
+  }
+  
+  .mv-text {
+    font-size: 18px;
+  }
+
+  /* #portfolio */
+  #portfolio {
+    padding: 90px 5%;
+  }
+
+  .portfolio-box {
+    width: 300px;
+  }
+
+  .portfolio-box div {
+    float: none;
+  }
+
+  .portfolio-box div:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+
+  .portfolio-box div:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  /* #feature */
+  #feature {
+    padding: 90px 5%;
+  }
+
+  .feature-box {
+    width: 320px;
+  }
+
+  .feature-item {
+    float: none;
+  }
+
+  .feature-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* #profile */
+  #profile {
+    padding: 90px 5%;
+  }
+
+  .profile-box {
+    width: 100%;
+  }
+
+  .profile-item {
+    width: 100%;
+    float: none;
+  }
+
+  .profile-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .profile-item section {
+    text-align: center;
+  }
+
+  /* #contact */
+  #contact {
+    padding: 90px 5%;
+  }
+
+  .contact-box {
+    width: 100%;
+  }
+
+  .contact-item {
+    width: 100%;
+    float: none;
+  }
+
+  .contact-item:first-child {
+    margin-bottom: 20px;
+  }
+
+  .contact-item section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-item section:first-child {
+    margin-bottom: 0;
+  }
+
+  .contact-item:first-child section:first-child {
+    margin-bottom: 20px;
+  }
+
+  .contact-item i:not(:last-child) {
+    margin-right: 8px;
+  }
 }
